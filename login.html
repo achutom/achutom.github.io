@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
+
 <body>
-    <form action="home 2.html" class="login-form" method="GET">
+    <form action="home2.html" class="login-form" method="GET">
         <input type="text" placeholder="username">
         <input type="password" placeholder="password">
-        <button>Login</button>
+        <button onsubmit="return submitform()">Login</button>
         <p class="message">Not Registered?<a href="register.html">Register</a></p>
     </form>
-    <script>
-    if (window.ResizeObserver &&
-        (!window.PerformanceObserver || !PerformanceObserver.supportedEntryTypes || PerformanceObserver.supportedEntryTypes.indexOf('paint') === -1)) {
-        new ResizeObserver(function (entries, observer) {
-            entries.some(function (entry) {
-                var contentRect = entry.contentRect;
-                if (contentRect.width > 0 && contentRect.height > 0) {
-                    requestAnimationFrame(function (now) {
-                        window.wixFirstPaint = now;
-                        dispatchEvent(new CustomEvent('wixFirstPaint'));
-                    });
-                    observer.disconnect();
-                    return true;
-                }
-            });
-        }).observe(document.body);
-    }
-    </script>
+    <script src="./ashProducts.js"></script>
+    <script>console.log(loggedUser);</script>    
 </body>
+
 </html>
