@@ -98,7 +98,7 @@
 				</div>
 				<div class="content">
 					<h3>Lego bikes</h3>
-					<p>$320</p>
+				   <button><p>$320</p></button>
 				</div>
 			</div>
 			<div class="flex-item box">
@@ -107,7 +107,7 @@
 				</div>
 				<div class="content">
 					<h3>Lego Star wars set</h3>
-					<p>$690</p>
+					<button><p>$690</p></button>
 				</div>
 			</div>
 			<div class="flex-item box">
@@ -116,7 +116,12 @@
 				</div>
 				<div class="content">
 					<h3>Lego space station set</h3>
-					<p>$900</p>
+					<button id="popup" onclick="togglePopup()">$900</button>
+					<script>
+						function togglePopup(){
+							document.getElementById("popup").classList.toggle("active");
+						}
+					</script>
 				</div>
 			</div>
 		</div>
